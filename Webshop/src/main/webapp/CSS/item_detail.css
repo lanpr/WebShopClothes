@@ -1,0 +1,25 @@
+.btn-color:hover,
+.btn-size:hover {
+    color: white;
+    background-color: rgb(218, 32, 113);
+}
+
+.btn-color,
+.btn-size {
+    background-color: white;
+    border-radius: 5px;
+    border: solid gray 1px !important;
+}
+
+.tmdt {
+    margin: 2px;
+    width: 15%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}

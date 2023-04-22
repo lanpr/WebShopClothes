@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+}
+
+body {
+   min-height: 200px;
+}
+
+.content {
+    min-height: 400px;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.menu>li>a,
+.menu>li>a:visited,
+.menu>li>a:hover,
+.menu>li>a:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    /* color: #81b3d2; */
+}
+
+.menu>li>a:hover {
+    color: #d73444;
+}
+
+.menu>li>a.before:before,
+.menu>li>a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.menu>li>a.after:after {
+    bottom: -0.25em;
+}
+
+.menu>li>a.before:before,
+.menu>li>a.after:after {
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: #d73444;
+}
+
+.menu>li>a.third:after,
+.menu>li>a.sixth:before,
+.menu>li>a.sixth:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.menu>li>a.before:hover:before,
+.menu>li>a.after:hover:after {
+    width: 100%;
+}
